@@ -1,0 +1,52 @@
+<html ng-app="usf">
+<head>
+<meta charset="utf-8">
+<title>USF Art Tour</title>
+<base href="/">
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<link rel="stylesheet" type="text/css" href="css/materialize.css">
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<script src="js/materialize.min.js"></script>
+<link rel="stylesheet" type="text/css" href="node_modules/leaflet/dist/leaflet.css">
+<script type="text/javascript" src="/node_modules/leaflet/dist/leaflet.js"></script>
+<script type="text/javascript" src="/node_modules/leaflet-pip/leaflet-pip.js"></script>
+<script type="text/javascript" src="/node_modules/angular/angular.min.js"></script>
+<script type="text/javascript" src="/node_modules/angular-route/angular-route.min.js"></script>
+<script type="text/javascript" src="/js_source/angular.js"></script>
+<script type="text/javascript" src="/node_modules/angular-leaflet-directive/dist/angular-leaflet-directive.min.js"></script>
+</script>
+<style>
+</style>
+</head>
+
+<body class="grey lighten-3" ng-controller="mainController">
+
+<div ng-view></div>
+
+
+<style type="text/css">
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+  main {
+    flex: 1 0 auto;
+  }
+</style>
+
+<footer class="page-footer nps-granite">
+  <div class="valign-wrapper center">
+    <div class="row valign">
+      <div class="col s12">
+        <a href="home" class="waves-effect waves-light btn-large black"><i class="large mdi-action-home"></i></a>
+        <a href="tour" class="waves-effect waves-light btn-large black"><i class="medium mdi-maps-my-location"></i></a>
+        <a href="about" class="waves-effect waves-light btn-large black"><i class="medium mdi-action-info"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+
+
+</html>

@@ -1,0 +1,30 @@
+<div class="row">
+<leaflet defaults="defaults" geojson="geojson" id="map" center="center" markers="markers"></leaflet>
+</div>
+	
+
+<div class="container-map-coords col s12">
+	<div class="row flow-text">
+		<div class="card center usf-seaGlass col s12" >
+			{{ center.lat | number: 3 }} , {{ center.lng | number: 3 }}
+		</div>
+	</div>
+</div>
+
+
+
+<div class="container-map-data container">
+	<h6 class="center-align flow-text">
+		{{ artist }}
+		{{ title }}
+		{{ year }}
+	</h6>
+	<p class="flow-text">
+		{{ info }}
+	</p>
+	<div class="row flow-text" ng-if="source.length > 0"> 
+		<source class="flow-text">
+			Source: {{ source }}
+		</source>
+	</div>
+</div>

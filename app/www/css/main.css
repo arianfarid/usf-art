@@ -1,0 +1,44 @@
+body, html { height: 100%; width: 100%;}
+
+#map, #tour_data{
+	padding: 0px;
+	margin: 0px;
+}
+
+#map {
+	height: 50%;
+	width: 100%;
+	position: fixed;
+	float:left;
+}
+
+.cont {
+	position: absolute;
+	top: 55%;
+	z-index: -10;
+}
+.leaflet-container img {
+	max-height: none;
+	max-width: none;
+}
+#tour_data {
+	position: absolute;
+	bottom: 0px;
+	height: 50%;
+	width: 100%;
+	padding: 10px 10px 10px 10px;
+	color:#f5f0dd;
+	background-color:#5e7630;
+}
+
+ul
+{
+    list-style-type: none;
+}
+span {
+	font: white;
+}
+a {
+	color: white;
+	text-decoration: none;
+}
